@@ -1,0 +1,9 @@
+{
+	"host": "google.com",
+	"servername": "google.com",
+	"tlsPort": 443,
+	"tcpPort": 80,
+	"fingerprintList": [
+	],
+	"strictChecking": false
+}
