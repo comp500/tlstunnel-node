@@ -15,8 +15,12 @@ const server = net.createServer((tcpSocket) => {
 
 	var tlsSocket = tls.connect(options, () => {
 		console.log("Connected to TLS server:", tlsSocket.authorized ? "authorized" : "unauthorized");
+
+		// Sync file descriptors, for some reason
 		tlsSocket.fd = tcpSocket.fd;
+		// Pipe TCP -> TLS
 		tcpSocket.pipe(tlsSocket);
+		// Pipe TLS -> TCP
 		tlsSocket.pipe(tcpSocket);
 	});
 
