@@ -2,8 +2,8 @@
 
 const tls = require("tls");
 const net = require("net");
-var config = require("./config.json");
 
+const config = require("./config.json");
 const options = {
 	host: config.host,
 	servername: config.servername,
@@ -14,8 +14,6 @@ const options = {
 var socketIdCounter = 0;
 
 const server = net.createServer((tcpSocket) => {
-	// Refresh config
-	config = require("./config.json");
 	// Save socketId then increment counter
 	var socketId = socketIdCounter++;
 
