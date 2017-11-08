@@ -20,5 +20,13 @@
   "bugs": {
     "url": "https://github.com/comp500/tlstunnel-node/issues"
   },
-  "homepage": "https://github.com/comp500/tlstunnel-node#readme"
+  "homepage": "https://github.com/comp500/tlstunnel-node#readme",
+  "eslintConfig": {
+    "env": {
+      "node": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 6
+    }
+  }
 }

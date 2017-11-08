@@ -1,3 +1,5 @@
+/*eslint-disable no-console*/
+
 const tls = require("tls");
 const net = require('net');
 
