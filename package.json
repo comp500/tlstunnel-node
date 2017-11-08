@@ -1,6 +1,6 @@
 {
   "name": "tlstunnel-client",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A TLS tunneling client (like stunnel) written in node.js",
   "main": "index.js",
   "scripts": {
