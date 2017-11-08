@@ -4,6 +4,7 @@
 	"tlsPort": 443,
 	"tcpPort": 80,
 	"fingerprintList": [
+
 	],
 	"strictChecking": false
 }
